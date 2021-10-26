@@ -1,0 +1,4 @@
+<launch>
+	<node pkg='rviz' name='rviz' type='rviz' args='-d $(find lab1)/my_config.rviz' />
+	<node pkg='lab1' type='filter_ranges.py' name='filter_ranges' output='screen'/>
+</launch>
